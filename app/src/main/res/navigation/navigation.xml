@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/main_login_screen">
+
+    <fragment
+        android:id="@+id/main_login_screen"
+        android:name="com.jienihou.outfitxchange.main_login_screen"
+        android:label="fragment_main_login_screen"
+        tools:layout="@layout/fragment_main_login_screen" >
+        <action
+            android:id="@+id/action_main_login_screen_to_login_screen"
+            app:destination="@id/login_screen" />
+        <action
+            android:id="@+id/action_main_login_screen_to_sign_up_screen"
+            app:destination="@id/sign_up_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_screen"
+        android:name="com.jienihou.outfitxchange.login_screen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_login_screen_to_forgot_password_screen"
+            app:destination="@id/forgot_password_screen" />
+        <action
+            android:id="@+id/action_login_screen_to_home_screen"
+            app:destination="@id/home_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/sign_up_screen"
+        android:name="com.jienihou.outfitxchange.sign_up_screen"
+        android:label="fragment_sign_up_screen"
+        tools:layout="@layout/fragment_sign_up_screen" />
+    <fragment
+        android:id="@+id/forgot_password_screen"
+        android:name="com.jienihou.outfitxchange.forgot_password_screen"
+        android:label="fragment_forgot_password_screen"
+        tools:layout="@layout/fragment_forgot_password_screen" />
+    <fragment
+        android:id="@+id/home_screen"
+        android:name="com.jienihou.outfitxchange.home_screen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" />
+</navigation>
