@@ -4,7 +4,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!-- Main Login Screen -->
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+
+    <!-- Login Screen -->
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!-- Forgot Password Screen -->
+    <string name="reset_password">Reset Password</string>
+    <string name="forgot_password_description">Enter your email and we will send you a temporary passcode</string>
+
 </resources>

@@ -1,14 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login_screen">
+    tools:context=".LoginScreen">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/main_login_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:src="@drawable/login_page" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_card"
+        style="@style/option_card"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/light_grey"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/default_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/card_title_text_margin_top"
+                android:text="@string/login"
+                android:textColor="@color/black"
+                android:textSize="@dimen/card_title_text_size"
+                app:layout_constraintBottom_toTopOf="@+id/email"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/email"
+                style="@style/default_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/email_text_margin_top"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/subheading_text_size"
+                app:layout_constraintBottom_toTopOf="@+id/email_input"
+                app:layout_constraintHorizontal_bias="@dimen/subheading_horizontal_bias"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <EditText
+                android:id="@+id/email_input"
+                style="@style/option_card_edittext"
+                android:background="@drawable/shape_rectangle_white"
+                android:fontFamily="@font/raleway"
+                android:paddingStart="@dimen/edittext_padding"
+                android:paddingEnd="@dimen/edittext_padding"
+                app:layout_constraintBottom_toTopOf="@+id/password"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/password"
+                style="@style/default_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/password_text_margin_top"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/subheading_text_size"
+                app:layout_constraintBottom_toTopOf="@+id/password_input"
+                app:layout_constraintHorizontal_bias="@dimen/text_horizontal_bias"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_input" />
+
+            <EditText
+                android:id="@+id/password_input"
+                style="@style/option_card_edittext"
+                android:background="@drawable/shape_rectangle_white"
+                android:fontFamily="@font/raleway"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password" />
+
+            <TextView
+                android:id="@+id/forgot_password_text"
+                style="@style/default_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/forgot_password_text_margin_bottom"
+                android:layout_marginEnd="@dimen/forgot_password_text_margin_right"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/forgot_password"
+                android:textColor="@color/link_blue"
+                android:textSize="@dimen/forgot_password_text_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+            <ImageView
+                android:id="@+id/next_button"
+                style="@style/option_card_next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_filter" />
 </FrameLayout>
