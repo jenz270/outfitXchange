@@ -8,4 +8,30 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="default_font">
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+    <!-- Basic card theme -->
+    <style name="option_card">
+        <item name="android:layout_width">@dimen/card_width</item>
+        <item name="android:layout_height">@dimen/card_height</item>
+    </style>
+
+    <style name="option_card_next">
+        <item name="android:layout_marginTop">@dimen/next_button_margin_top</item>
+        <item name="android:src">@drawable/next</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="option_card_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/edittext_padding</item>
+        <item name="android:paddingRight">@dimen/edittext_padding</item>
+        <item name="android:layout_height">@dimen/card_input_field_height</item>
+        <item name="android:layout_marginStart">@dimen/card_input_field_margin</item>
+        <item name="android:layout_marginEnd">@dimen/card_input_field_margin</item>
+    </style>
+
 </resources>

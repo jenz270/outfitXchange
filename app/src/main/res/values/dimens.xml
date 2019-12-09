@@ -2,7 +2,7 @@
 <resources>
     <!-- Main Login Screen -->
     <dimen name="logo_width">300dp</dimen>
-    <dimen name="logo_height">80dp</dimen>
+    <dimen name="logo_height">60dp</dimen>
     <dimen name="logo_marginTop">80dp</dimen>
     <dimen name="logo_horizontal_bias">0.5</dimen>
     <dimen name="button_width">180dp</dimen>
@@ -10,4 +10,43 @@
     <dimen name="button_margin_top">450dp</dimen>
     <dimen name="button_horizontal_bias">0.20</dimen>
     <dimen name="button_font_size">20sp</dimen>
+
+    <!-- Sign Up Screen -->
+    <dimen name="name_margin_bottom">220dp</dimen>
+    <dimen name="name_margin_top">25dp</dimen>
+    <dimen name="signup_email_text_margin_bottom">400dp</dimen>
+    <dimen name="signup_email_text_margin_top">15dp</dimen>
+    <dimen name="signup_email_layout_margin_top">170dp</dimen>
+    <dimen name="signup_password_layout_margin_top">250dp</dimen>
+    <dimen name="signup_password_text_margin_bottom">240dp</dimen>
+
+    <!-- Login Screen -->
+    <dimen name="forgot_password_text_size">10sp</dimen>
+    <dimen name="password_layout_margin_top">160dp</dimen>
+    <dimen name="email_margin_top">10dp</dimen>
+    <dimen name="email_text_margin_top">30dp</dimen>
+    <dimen name="password_layout_horizontal_bias">0.15</dimen>
+    <dimen name="forgot_password_text_margin_right">192dp</dimen>
+    <dimen name="forgot_password_text_margin_bottom">10dp</dimen>
+
+    <!-- Forgot Password Screen -->
+
+    <!-- Basic Card Theme -->
+    <dimen name="card_width">350dp</dimen>
+    <dimen name="card_height">400dp</dimen>
+    <dimen name="card_corner_radius">20dp</dimen>
+    <dimen name="card_title_text_margin_top">20dp</dimen>
+    <dimen name="card_title_vertical_bias">0.05</dimen>
+    <dimen name="card_title_text_size">20sp</dimen>
+    <dimen name="card_input_field_margin">30dp</dimen>
+    <dimen name="card_input_field_height">30dp</dimen>
+    <dimen name="subheading_text_size">15sp</dimen>
+    <dimen name="subheading_horizontal_bias">0.10</dimen>
+    <dimen name="subheading_layout_horizontal_bias">0.15</dimen>
+    <dimen name="text_horizontal_bias">0.11</dimen>
+    <dimen name="edittext_padding">10dp</dimen>
+    <dimen name="password_text_margin_top">10dp</dimen>
+
+    <!-- Card Button Margins -->
+    <dimen name="next_button_margin_top">300dp</dimen>
 </resources>
