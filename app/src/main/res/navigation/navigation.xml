@@ -48,4 +48,24 @@
         android:name="com.jienihou.outfitxchange.HomeScreen"
         android:label="fragment_home_screen"
         tools:layout="@layout/fragment_home_screen" />
+    <fragment
+        android:id="@+id/user_view"
+        android:name="com.jienihou.outfitxchange.UserProfileScreen"
+        android:label="fragment_user_view"
+        tools:layout="@layout/fragment_user_view" />
+    <fragment
+        android:id="@+id/favourites_view"
+        android:name="com.jienihou.outfitxchange.FavouritesScreen"
+        android:label="fragment_favourites_view"
+        tools:layout="@layout/fragment_favourites_view" />
+    <fragment
+        android:id="@+id/new_post_view"
+        android:name="com.jienihou.outfitxchange.NewPostScreen"
+        android:label="fragment_new_post_view"
+        tools:layout="@layout/fragment_new_post_view" />
+    <fragment
+        android:id="@+id/messages_view"
+        android:name="com.jienihou.outfitxchange.MessagesScreen"
+        android:label="fragment_messages_view"
+        tools:layout="@layout/fragment_messages_view" />
 </navigation>
