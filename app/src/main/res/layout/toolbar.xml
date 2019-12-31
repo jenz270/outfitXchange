@@ -10,10 +10,10 @@
         android:layout_height="wrap_content"
         android:gravity="center">
         <ImageView
-            android:paddingTop="8dp"
-            android:paddingBottom="4dp"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:paddingTop="@dimen/title_image_padding_top"
+            android:paddingBottom="@dimen/title_image_padding_bottom"
+            android:layout_width="@dimen/title_image_layout_width"
+            android:layout_height="@dimen/title_image_layout_height"
             android:src="@drawable/logo"/>
     </LinearLayout>
 </androidx.appcompat.widget.Toolbar>

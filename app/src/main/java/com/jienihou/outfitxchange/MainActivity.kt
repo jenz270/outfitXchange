@@ -3,6 +3,11 @@ package com.jienihou.outfitxchange
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
+
+/**
+ * MainActivity is the main point of the app
+ * where all the views are created on top of
+ */
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

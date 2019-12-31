@@ -1,18 +1,14 @@
-package com.jienihou.outfitxchange
+package com.jienihou.outfitxchange.newpost
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.jienihou.outfitxchange.R
 
 /**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [new_post_view.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [new_post_view.newInstance] factory method to
- * create an instance of this fragment.
+ * * NewPostScreen shows the new post options
  */
 class NewPostScreen : Fragment() {
     override fun onCreateView(

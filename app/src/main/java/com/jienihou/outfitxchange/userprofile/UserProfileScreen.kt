@@ -1,4 +1,4 @@
-package com.jienihou.outfitxchange
+package com.jienihou.outfitxchange.userprofile
 
 
 import android.os.Bundle
@@ -6,9 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.jienihou.outfitxchange.R
 
 /**
- * A simple [Fragment] subclass.
+ * UserProfileScreen shows the user profile
  */
 class UserProfileScreen : Fragment() {
 

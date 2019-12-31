@@ -1,4 +1,4 @@
-package com.jienihou.outfitxchange
+package com.jienihou.outfitxchange.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import com.jienihou.outfitxchange.R
 
 /**
  * LoginScreen shows the login fragment

@@ -1,19 +1,15 @@
-package com.jienihou.outfitxchange
+package com.jienihou.outfitxchange.messages
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.jienihou.outfitxchange.R
 
 
 /**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [messages_view.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [messages_view.newInstance] factory method to
- * create an instance of this fragment.
+ * MessagesScreen shows the message list
  */
 class MessagesScreen : Fragment() {
 

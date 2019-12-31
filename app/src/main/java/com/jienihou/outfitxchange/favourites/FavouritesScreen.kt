@@ -1,18 +1,14 @@
-package com.jienihou.outfitxchange
+package com.jienihou.outfitxchange.favourites
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.jienihou.outfitxchange.R
 
 /**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [favourites_view.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [favourites_view.newInstance] factory method to
- * create an instance of this fragment.
+ * FavouritesScreen shows the favourites screen
  */
 class FavouritesScreen : Fragment() {
     override fun onCreateView(

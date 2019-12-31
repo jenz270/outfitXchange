@@ -17,4 +17,10 @@
     <string name="reset_password">Reset Password</string>
     <string name="forgot_password_description">Enter your email and we will send you a temporary passcode</string>
 
+    <!-- Category Card Item -->
+    <string name="image_content_description">clothing</string>
+
+    <!-- Product Card Item -->
+    <string name="product_image_content_description">shoe</string>
+
 </resources>

@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import com.jienihou.outfitxchange.R
 
 
 /**
- * MainLoginScreen is the title screen
+ * MainLoginScreen shows the title screen
  */
 class MainLoginScreen : Fragment() {
     override fun onCreateView(

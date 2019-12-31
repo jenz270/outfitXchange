@@ -49,4 +49,15 @@
 
     <!-- Card Button Margins -->
     <dimen name="next_button_margin_top">300dp</dimen>
+
+    <!-- Logo Toolbar -->
+    <dimen name="title_image_padding_top">8dp</dimen>
+    <dimen name="title_image_padding_bottom">4dp</dimen>
+    <dimen name="title_image_layout_width">300dp</dimen>
+    <dimen name="title_image_layout_height">40dp</dimen>
+
+
+    <!-- Category Card Item -->
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="card_item_margin">8dp</dimen>
 </resources>

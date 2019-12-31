@@ -1,4 +1,4 @@
-package com.jienihou.outfitxchange
+package com.jienihou.outfitxchange.forgotpassword
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
+import com.jienihou.outfitxchange.R
 import kotlinx.android.synthetic.main.fragment_forgot_password_screen.*
 
 /**
