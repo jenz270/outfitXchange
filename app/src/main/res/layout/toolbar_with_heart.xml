@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:paddingTop="@dimen/title_image_padding_top"
+            android:paddingBottom="@dimen/title_image_padding_bottom"
+            android:paddingStart="@dimen/title_image_padding_start"
+            android:paddingEnd="@dimen/title_image_padding_end"
+            android:layout_width="@dimen/title_image_layout_width"
+            android:layout_height="@dimen/title_image_layout_height"
+            android:src="@drawable/logo"/>
+        <ImageView
+            android:id="@+id/outline_heart"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="@dimen/heart_image_padding_top"
+            android:layout_width="@dimen/heart_image_layout_width"
+            android:layout_height="@dimen/heart_image_layout_height"
+            android:src="@drawable/heart_image_pressable" />
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

@@ -5,4 +5,4 @@ package com.jienihou.outfitxchange.data
  */
 data class ProductItem(
     val imageName: Int, val category: String, val brandName: String,
-    val productTitle: String, val size: Double, val rentPrice: Int)
+    val productTitle: String, val size: Double, val gender: String, val rentPrice: Double, val duration: String)

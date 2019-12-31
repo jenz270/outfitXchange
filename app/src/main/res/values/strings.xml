@@ -23,4 +23,8 @@
     <!-- Product Card Item -->
     <string name="product_image_content_description">shoe</string>
 
+    <!-- Product Details Item -->
+    <string name="product_size_text">Size: %1$s %2$s</string>
+    <string name="product_rent_price_text">Rent Price: $%1$s / %2$s</string>
+    <string name="product_details_button_text">Contact Owner</string>
 </resources>

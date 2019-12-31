@@ -18,6 +18,7 @@ class CategoryViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         image.setImageResource(categoryItem.imageName)
         categoryName.text = categoryItem.category
 
+        // TODO: Display items based on category clicked
         // shoes are the only category that will lead to another page at the moment.
         if(categoryItem.category == "Shoes") {
             itemView.setOnClickListener {
