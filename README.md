@@ -1,2 +1,8 @@
-# OutfitXchange
-An Android application for high-fashion and luxury item rentals.
+OutfitXchange
+=====================
+An Android application to facilitate high-end luxury item rentals.
+
+Screenshots
+=====================
+
+
