@@ -49,4 +49,32 @@
 
     <!-- Card Button Margins -->
     <dimen name="next_button_margin_top">300dp</dimen>
+
+    <!-- Logo Toolbar -->
+    <dimen name="title_image_padding_top">8dp</dimen>
+    <dimen name="title_image_padding_bottom">4dp</dimen>
+    <dimen name="title_image_padding_start">20dp</dimen>
+    <dimen name="title_image_padding_end">0dp</dimen>
+    <dimen name="title_image_layout_width">300dp</dimen>
+    <dimen name="title_image_layout_height">40dp</dimen>
+    <dimen name="heart_image_padding_top">4dp</dimen>
+    <dimen name="heart_image_layout_width">30dp</dimen>
+    <dimen name="heart_image_layout_height">40dp</dimen>
+
+    <!-- Category Card Item -->
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="card_item_margin">8dp</dimen>
+
+    <!-- Product Details Screen -->
+    <dimen name="details_card_view_margin_top">20dp</dimen>
+    <dimen name="product_image_margin_start">20dp</dimen>
+    <dimen name="product_image_margin_end">20dp</dimen>
+    <dimen name="product_image_margin_top">10dp</dimen>
+    <dimen name="product_image_margin_bottom">10dp</dimen>
+    <dimen name="product_details_text_margin_top">4dp</dimen>
+    <dimen name="contact_owner_button_width">200dp</dimen>
+    <dimen name="contact_owner_button_height">45dp</dimen>
+
+    <dimen name="product_details_text_size">20sp</dimen>
+    <dimen name="product_price_text_size">25sp</dimen>
 </resources>
