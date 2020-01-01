@@ -71,7 +71,11 @@
         android:id="@+id/messages_view"
         android:name="com.jienihou.outfitxchange.messages.MessagesScreen"
         android:label="fragment_messages_view"
-        tools:layout="@layout/fragment_messages_view" />
+        tools:layout="@layout/fragment_messages_view" >
+        <action
+            android:id="@+id/action_messages_view_to_message_detail_screen"
+            app:destination="@id/message_detail_screen" />
+    </fragment>
     <fragment
         android:id="@+id/products_screen"
         android:name="com.jienihou.outfitxchange.productpage.ProductsScreen"
@@ -86,4 +90,9 @@
         android:name="com.jienihou.outfitxchange.productdetails.ProductDetailsScreen"
         android:label="fragment_product_details_screen"
         tools:layout="@layout/fragment_product_details_screen" />
+    <fragment
+        android:id="@+id/message_detail_screen"
+        android:name="com.jienihou.outfitxchange.messagedetails.MessageDetailScreen"
+        android:label="fragment_message_detail_screen"
+        tools:layout="@layout/fragment_message_detail_screen" />
 </navigation>

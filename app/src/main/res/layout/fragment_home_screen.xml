@@ -22,8 +22,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_categories"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/rv_layout_width"
+        android:layout_height="@dimen/rv_layout_height"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

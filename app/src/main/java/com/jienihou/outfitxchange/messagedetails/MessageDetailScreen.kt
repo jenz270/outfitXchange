@@ -1,9 +1,11 @@
-package com.jienihou.outfitxchange.messages
+package com.jienihou.outfitxchange.messagedetails
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
@@ -12,39 +14,43 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
 import com.jienihou.outfitxchange.R
-import com.jienihou.outfitxchange.data.source.MessageDataSource
+import com.jienihou.outfitxchange.data.source.DetailedMessageDataSource
+import com.jienihou.outfitxchange.productdetails.ProductDetailsHelper
 
 /**
- * MessagesScreen shows the message list
+ * MessageDetailScreen shows the message details
  */
-class MessagesScreen : Fragment() {
-
+class MessageDetailScreen : Fragment() {
     private lateinit var bottomNavigationView: BottomNavigationViewEx
-    private val messageAdapter = MessageRVAdapter()
+    private val detailedMessageAdapter = DetailedMessageRVAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_messages_view, container, false)
+        val view = inflater.inflate(R.layout.fragment_message_detail_screen, container, false)
 
         // Logo bar view
         val toolbar = view?.findViewById(R.id.toolbar) as Toolbar
         (activity as AppCompatActivity).setSupportActionBar(toolbar)
 
-        // Messages Page Recycler View
-        val messagesRV = view.findViewById(R.id.rv_messages) as RecyclerView
-        messagesRV.layoutManager = LinearLayoutManager(this.context)
-        messagesRV.adapter = messageAdapter
-        addMessages()
+        // Message Detail Page View
+        val profileImage = view.findViewById<ImageView>(R.id.profile_image)
+        val productTitle = view.findViewById<TextView>(R.id.product_title_text)
+        val messageDetails = MessageDetailsHelper()
 
-        // TODO: set the visibility of the dot to only visible if the message is recent and never clicked
-        // val notification = view.findViewById<ImageView>(R.id.notification_dot)
+        val imageName = messageDetails.retrieveProfileImage("profileImage", arguments) ?: R.drawable.no_image
+        profileImage.setImageResource(imageName)
+        productTitle.text = messageDetails.retrieveProductTitle("productTitle", arguments)
+
+        // Message Detail Recycler View
+        val messagesRV = view.findViewById(R.id.rv_messages_detail) as RecyclerView
+        messagesRV.layoutManager = LinearLayoutManager(this.context)
+        messagesRV.adapter = detailedMessageAdapter
+        addDetailedMessages()
 
         // Bottom Navigation View
         setupBottomNavigationView(view)
-        
-        // TODO: set message notification on bottom navigation
 
         return view
     }
@@ -71,8 +77,8 @@ class MessagesScreen : Fragment() {
     }
 
     // addMessages populates the data into the recycler view
-    private fun addMessages(){
-        val data = MessageDataSource.createMessages()
-        messageAdapter.messageList(data)
+    private fun addDetailedMessages(){
+        val data = DetailedMessageDataSource.createDetailedMessages()
+        detailedMessageAdapter.detailedMessageList(data)
     }
 }

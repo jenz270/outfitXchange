@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Common Dimensions -->
+    <dimen name="rv_layout_width">0dp</dimen>
+    <dimen name="rv_layout_height">0dp</dimen>
+
     <!-- Main Login Screen -->
     <dimen name="logo_width">300dp</dimen>
     <dimen name="logo_height">60dp</dimen>
