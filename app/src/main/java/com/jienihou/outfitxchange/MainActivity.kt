@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 /**
  * MainActivity is the main point of the app
- * where all the views are created on top of
+ * where all the views are created on top
  */
 class MainActivity : AppCompatActivity() {
 

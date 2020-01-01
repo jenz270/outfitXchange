@@ -1,6 +1,7 @@
 package com.jienihou.outfitxchange.data.source
 
 import com.jienihou.outfitxchange.R
+import com.jienihou.outfitxchange.data.Category
 import com.jienihou.outfitxchange.data.CategoryItem
 
 /**
@@ -8,15 +9,13 @@ import com.jienihou.outfitxchange.data.CategoryItem
  */
 class CategoryDataSource{
     companion object{
-        fun createCategories(): List<CategoryItem>{
-            return listOf(
-                CategoryItem(R.drawable.sweater, "Tops"),
-                CategoryItem(R.drawable.category_three, "Pants"),
-                CategoryItem(R.drawable.category_five, "Bags"),
-                CategoryItem(R.drawable.category_two, "Outerwear"),
-                CategoryItem(R.drawable.shoe, "Shoes"),
-                CategoryItem(R.drawable.category_six, "Accessories")
-                )
-        }
+        fun createCategories() = listOf(
+                CategoryItem(R.drawable.sweater, Category.TOPS.category),
+                CategoryItem(R.drawable.category_three, Category.PANTS.category),
+                CategoryItem(R.drawable.category_five, Category.BAGS.category),
+                CategoryItem(R.drawable.category_two, Category.OUTERWEAR.category),
+                CategoryItem(R.drawable.shoe, Category.SHOES.category),
+                CategoryItem(R.drawable.category_six, Category.ACCESSORIES.category)
+        )
     }
 }

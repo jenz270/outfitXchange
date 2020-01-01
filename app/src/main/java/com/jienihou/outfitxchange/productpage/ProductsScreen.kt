@@ -18,6 +18,10 @@ import com.jienihou.outfitxchange.data.source.ProductDataSource
  * ProductsScreen shows the products
  */
 class ProductsScreen : Fragment() {
+        companion object {
+            const val columns = 2
+        }
+
         private lateinit var bottomNavigationView: BottomNavigationViewEx
         private val productAdapter = ProductRVAdapter()
 
@@ -33,7 +37,6 @@ class ProductsScreen : Fragment() {
 
             // Products Grid Recycler View
             val productRV = view.findViewById(R.id.rv_products) as RecyclerView
-            val columns = 2
             productRV.layoutManager = GridLayoutManager(this.context, columns)
             productRV.adapter = productAdapter
             addProducts()

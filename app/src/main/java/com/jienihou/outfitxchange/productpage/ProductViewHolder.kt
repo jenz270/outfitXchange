@@ -19,12 +19,12 @@ class ProductViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
         // TODO: Display details based on product clicked
         // Using only the balenciaga shoe as an example for now for flow.
-        if(productItem.brandName == "Balenciaga") {
-            var bundle = bundleOf(
+        if (productItem.brandName == "Balenciaga") {
+            val bundle = bundleOf(
                 "imageName" to productItem.imageName,
                 "category" to productItem.category,
                 "brandName" to productItem.brandName,
-                "productTitle" to productItem.productTitle,
+                "productStyle" to productItem.productStyle,
                 "size" to productItem.size.toString(),
                 "gender" to productItem.gender,
                 "rentPrice" to (productItem.rentPrice).toString(),

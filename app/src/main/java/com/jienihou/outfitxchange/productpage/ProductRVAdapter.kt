@@ -9,11 +9,11 @@ import com.jienihou.outfitxchange.data.ProductItem
 /**
  * CategoryRVAdapter is the recyclerview adapter used for displaying categories
  */
-class ProductRVAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
+class ProductRVAdapter : RecyclerView.Adapter<ProductViewHolder>() {
     private var productItems: List<ProductItem> = ArrayList()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         return ProductViewHolder(
             LayoutInflater.from(parent.context).inflate(
                 R.layout.product_card_item,
@@ -22,10 +22,9 @@ class ProductRVAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             )
         )
     }
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        if(holder is ProductViewHolder){
-            holder.bind(productItems[position])
-        }
+
+    override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
+        holder.bind(productItems[position])
     }
 
     override fun getItemCount(): Int {

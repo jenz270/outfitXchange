@@ -45,14 +45,15 @@ class ProductDetailsScreen : Fragment() {
         val productStyle = view.findViewById<TextView>(R.id.product_style)
         val productSize = view.findViewById<TextView>(R.id.product_size)
         val rentPrice = view.findViewById<TextView>(R.id.rent_price)
+        var productDetails = ProductDetailsHelper()
 
         // TODO: Replace with different image if the product image is not found
-        val imageName = arguments?.getInt("imageName") ?: R.drawable.no_image
+        val imageName = productDetails.retrieveImageName("imageName", arguments) ?: R.drawable.no_image
         image.setImageResource(imageName)
-        brandName.text = arguments?.getString("brandName")
-        productStyle.text = arguments?.getString("productTitle")
-        productSize.text = getString(R.string.product_size_text, arguments?.getString("size"),  arguments?.getString("gender"))
-        rentPrice.text = getString(R.string.product_rent_price_text,arguments?.getString("rentPrice"), arguments?.getString("duration"))
+        brandName.text = productDetails.retrieveBrandName("brandName", arguments)
+        productStyle.text = productDetails.retrieveProductStyle("productStyle", arguments)
+        productSize.text = productDetails.retrieveProductSize(context, R.string.product_size_text,"size","gender", arguments)
+        rentPrice.text = productDetails.retrieveRentPrice(context, R.string.product_rent_price_text,"rentPrice","duration", arguments)
 
         // Bottom Navigation View
         bottomNavigationView = view.findViewById(R.id.bottom_navigation) as BottomNavigationViewEx
