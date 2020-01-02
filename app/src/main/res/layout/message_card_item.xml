@@ -9,10 +9,10 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_item"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="10dp"
-        app:cardCornerRadius="10dp"
+        android:layout_height="@dimen/message_card_height"
+        android:layout_marginStart="@dimen/message_card_margin_start"
+        android:layout_marginEnd="@dimen/message_card_margin_end"
+        app:cardCornerRadius="@dimen/message_card_corner_radius"
         app:cardElevation="@dimen/card_elevation"
         app:cardUseCompatPadding="true">
 
@@ -24,9 +24,9 @@
             <ImageView
                 android:id="@+id/profile_photo"
                 android:src="@drawable/portrait"
-                android:layout_width="55dp"
+                android:layout_width="@dimen/message_card_profile_image_width"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="@dimen/message_card_profile_image_margin_start"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
@@ -36,8 +36,8 @@
                 android:src="@drawable/orange_notification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
+                android:layout_marginTop="@dimen/message_card_orange_dot_margin_top"
+                android:layout_marginEnd="@dimen/message_card_orange_dot_margin_end"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/product_title"
                 app:layout_constraintTop_toTopOf="parent"
@@ -49,9 +49,9 @@
                 android:gravity="center"
                 android:text="@string/message_title"
                 android:maxLines="1"
-                android:layout_width="260dp"
+                android:layout_width="@dimen/message_card_product_title_width"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/message_card_product_title_margin_top"
                 app:layout_constraintLeft_toRightOf="@+id/profile_photo"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
@@ -61,7 +61,7 @@
                 android:gravity="center"
                 tools:text="Hey There, yes!  How long are you thinking of renting them for?"
                 android:maxLines="1"
-                android:layout_width="260dp"
+                android:layout_width="@dimen/message_card_message_width"
                 android:layout_height="wrap_content"
                 app:layout_constraintLeft_toRightOf="@+id/profile_photo"
                 app:layout_constraintRight_toRightOf="parent"

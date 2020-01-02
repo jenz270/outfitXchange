@@ -31,4 +31,7 @@
     <!-- Message Item -->
     <string name="messages_page_title">Messages</string>
     <string name="message_title">%1$s Owner</string>
+
+    <!-- Message Details Item -->
+    <string name="messages_entry_hint">Type your message here</string>
 </resources>

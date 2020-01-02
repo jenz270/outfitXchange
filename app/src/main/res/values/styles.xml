@@ -27,8 +27,8 @@
 
     <style name="option_card_edittext">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:paddingLeft">@dimen/edittext_padding</item>
-        <item name="android:paddingRight">@dimen/edittext_padding</item>
+        <item name="android:paddingLeft">@dimen/edit_text_padding</item>
+        <item name="android:paddingRight">@dimen/edit_text_padding</item>
         <item name="android:layout_height">@dimen/card_input_field_height</item>
         <item name="android:layout_marginStart">@dimen/card_input_field_margin</item>
         <item name="android:layout_marginEnd">@dimen/card_input_field_margin</item>

@@ -35,6 +35,14 @@ class DetailedMessageDataSource{
             DetailedMessageItem(
                 "User",
                 "Thanks."
+            ),
+            DetailedMessageItem(
+                "Jenny",
+                "My Number is xxxxxx."
+            ),
+            DetailedMessageItem(
+                "User",
+                "Mine is xxxxxx."
             )
         )
     }

@@ -25,13 +25,13 @@
     <dimen name="signup_password_text_margin_bottom">240dp</dimen>
 
     <!-- Login Screen -->
-    <dimen name="forgot_password_text_size">10sp</dimen>
-    <dimen name="password_layout_margin_top">160dp</dimen>
-    <dimen name="email_margin_top">10dp</dimen>
-    <dimen name="email_text_margin_top">30dp</dimen>
-    <dimen name="password_layout_horizontal_bias">0.15</dimen>
-    <dimen name="forgot_password_text_margin_right">192dp</dimen>
-    <dimen name="forgot_password_text_margin_bottom">10dp</dimen>
+    <dimen name="login_screen_forgot_password_text_size">10sp</dimen>
+    <dimen name="login_screen_password_layout_margin_top">160dp</dimen>
+    <dimen name="login_screen_email_margin_top">10dp</dimen>
+    <dimen name="login_screen_email_text_margin_top">30dp</dimen>
+    <dimen name="login_screen_password_layout_horizontal_bias">0.15</dimen>
+    <dimen name="login_screen_forgot_password_text_margin_right">192dp</dimen>
+    <dimen name="login_screen_forgot_password_text_margin_bottom">10dp</dimen>
 
     <!-- Forgot Password Screen -->
 
@@ -48,7 +48,7 @@
     <dimen name="subheading_horizontal_bias">0.10</dimen>
     <dimen name="subheading_layout_horizontal_bias">0.15</dimen>
     <dimen name="text_horizontal_bias">0.11</dimen>
-    <dimen name="edittext_padding">10dp</dimen>
+    <dimen name="edit_text_padding">10dp</dimen>
     <dimen name="password_text_margin_top">10dp</dimen>
 
     <!-- Card Button Margins -->
@@ -78,7 +78,34 @@
     <dimen name="product_details_text_margin_top">4dp</dimen>
     <dimen name="contact_owner_button_width">200dp</dimen>
     <dimen name="contact_owner_button_height">45dp</dimen>
-
     <dimen name="product_details_text_size">20sp</dimen>
     <dimen name="product_price_text_size">25sp</dimen>
+
+    <!-- Messages Screen -->
+    <dimen name="message_card_height">100dp</dimen>
+    <dimen name="message_card_margin_start">16dp</dimen>
+    <dimen name="message_card_margin_end">10dp</dimen>
+    <dimen name="message_card_corner_radius">10dp</dimen>
+    <dimen name="message_card_profile_image_width">55dp</dimen>
+    <dimen name="message_card_profile_image_margin_start">20dp</dimen>
+    <dimen name="message_card_orange_dot_margin_top">10dp</dimen>
+    <dimen name="message_card_orange_dot_margin_end">30dp</dimen>
+    <dimen name="message_card_product_title_width">260dp</dimen>
+    <dimen name="message_card_product_title_margin_top">20dp</dimen>
+    <dimen name="message_card_message_width">260dp</dimen>
+
+    <!-- Message Details Screen -->
+    <dimen name="message_details_padding_bottom">155dp</dimen>
+    <dimen name="message_details_profile_image_margin_top">20dp</dimen>
+    <dimen name="message_details_product_title_margin_top">10dp</dimen>
+    <dimen name="message_details_rv_margin_top">10dp</dimen>
+    <dimen name="message_details_message_box_margin_top">10dp</dimen>
+    <dimen name="message_details_message_box_padding">5dp</dimen>
+    <dimen name="message_details_edit_text_margin">10dp</dimen>
+    <dimen name="message_details_input_string_size">12sp</dimen>
+    <dimen name="message_details_image_button_margin_start">20dp</dimen>
+    <dimen name="message_details_image_button_margin_end">20dp</dimen>
+    <dimen name="message_details_image_button_margin_top">10dp</dimen>
+    <dimen name="message_details_separator_height">1dp</dimen>
+
 </resources>
