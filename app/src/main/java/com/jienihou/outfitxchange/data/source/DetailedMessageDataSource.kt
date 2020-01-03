@@ -5,8 +5,8 @@ import com.jienihou.outfitxchange.data.DetailedMessageItem
 /**
  * DetailedMessageDataSource consists of all the message details
  */
-class DetailedMessageDataSource{
-    companion object{
+class DetailedMessageDataSource {
+    companion object {
         fun createDetailedMessages() = listOf(
             DetailedMessageItem(
                 "User",

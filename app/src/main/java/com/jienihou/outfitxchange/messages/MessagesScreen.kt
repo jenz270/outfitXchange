@@ -11,6 +11,7 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+import com.jienihou.outfitxchange.MainActivity
 import com.jienihou.outfitxchange.R
 import com.jienihou.outfitxchange.data.source.MessageDataSource
 
@@ -19,7 +20,6 @@ import com.jienihou.outfitxchange.data.source.MessageDataSource
  */
 class MessagesScreen : Fragment() {
 
-    private lateinit var bottomNavigationView: BottomNavigationViewEx
     private val messageAdapter = MessageRVAdapter()
 
     override fun onCreateView(
@@ -42,36 +42,15 @@ class MessagesScreen : Fragment() {
         // val notification = view.findViewById<ImageView>(R.id.notification_dot)
 
         // Bottom Navigation View
-        setupBottomNavigationView(view)
-        
+        (activity as MainActivity).setupBottomNavigationView(view)
+
         // TODO: set message notification on bottom navigation
 
         return view
     }
 
-    private fun setupBottomNavigationView(view: View) {
-        bottomNavigationView = view.findViewById(R.id.bottom_navigation) as BottomNavigationViewEx
-        bottomNavigationView.enableItemShiftingMode(false)
-        bottomNavigationView.setTextVisibility(false)
-        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.action_home -> Navigation.findNavController(view)
-                    .navigate(R.id.home_screen)
-                R.id.action_messages -> Navigation.findNavController(view)
-                    .navigate(R.id.messages_view)
-                R.id.action_add -> Navigation.findNavController(view)
-                    .navigate(R.id.new_post_view)
-                R.id.action_favorites -> Navigation.findNavController(view)
-                    .navigate(R.id.favourites_view)
-                R.id.action_account -> Navigation.findNavController(view)
-                    .navigate(R.id.user_view)
-            }
-            true
-        }
-    }
-
     // addMessages populates the data into the recycler view
-    private fun addMessages(){
+    private fun addMessages() {
         val data = MessageDataSource.createMessages()
         messageAdapter.messageList(data)
     }

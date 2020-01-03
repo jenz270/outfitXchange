@@ -27,7 +27,7 @@ class MessageRVAdapter : RecyclerView.Adapter<MessageViewHolder>() {
         return messageItems.size
     }
 
-    fun messageList(messageList: List<MessageItem>){
+    fun messageList(messageList: List<MessageItem>) {
         messageItems = messageList
     }
 }

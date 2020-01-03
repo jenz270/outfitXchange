@@ -27,7 +27,7 @@ class DetailedMessageRVAdapter : RecyclerView.Adapter<DetailedMessageViewHolder>
         return messageItems.size
     }
 
-    fun detailedMessageList(detailedMessageList: List<DetailedMessageItem>){
+    fun detailedMessageList(detailedMessageList: List<DetailedMessageItem>) {
         messageItems = detailedMessageList
     }
 }

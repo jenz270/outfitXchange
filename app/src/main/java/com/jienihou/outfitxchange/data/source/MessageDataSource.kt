@@ -6,8 +6,8 @@ import com.jienihou.outfitxchange.data.MessageItem
 /**
  * MessageDataSource consists of all the data for the Recycler View
  */
-class MessageDataSource{
-    companion object{
+class MessageDataSource {
+    companion object {
         fun createMessages() = listOf(
             MessageItem(
                 R.drawable.portrait,
