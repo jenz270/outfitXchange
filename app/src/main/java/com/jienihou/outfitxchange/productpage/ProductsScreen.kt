@@ -11,6 +11,7 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+import com.jienihou.outfitxchange.MainActivity
 import com.jienihou.outfitxchange.R
 import com.jienihou.outfitxchange.data.source.ProductDataSource
 
@@ -42,24 +43,8 @@ class ProductsScreen : Fragment() {
             addProducts()
 
             // Bottom Navigation View
-            bottomNavigationView = view.findViewById(R.id.bottom_navigation) as BottomNavigationViewEx
-            bottomNavigationView.enableItemShiftingMode(false)
-            bottomNavigationView.setTextVisibility(false)
-            bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-                when (item.itemId) {
-                    R.id.action_home -> Navigation.findNavController(view)
-                        .navigate(R.id.home_screen)
-                    R.id.action_messages -> Navigation.findNavController(view)
-                        .navigate(R.id.messages_view)
-                    R.id.action_add -> Navigation.findNavController(view)
-                        .navigate(R.id.new_post_view)
-                    R.id.action_favorites -> Navigation.findNavController(view)
-                        .navigate(R.id.favourites_view)
-                    R.id.action_account -> Navigation.findNavController(view)
-                        .navigate(R.id.user_view)
-                }
-                true
-            }
+            (activity as MainActivity).setupBottomNavigationView(view)
+
             return view
         }
 

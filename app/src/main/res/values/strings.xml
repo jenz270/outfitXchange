@@ -27,4 +27,11 @@
     <string name="product_size_text">Size: %1$s %2$s</string>
     <string name="product_rent_price_text">Rent Price: $%1$s / %2$s</string>
     <string name="product_details_button_text">Contact Owner</string>
+
+    <!-- Message Item -->
+    <string name="messages_page_title">Messages</string>
+    <string name="message_title">%1$s Owner</string>
+
+    <!-- Message Details Item -->
+    <string name="messages_entry_hint">Type your message here</string>
 </resources>

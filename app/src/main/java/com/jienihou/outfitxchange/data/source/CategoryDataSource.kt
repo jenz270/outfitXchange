@@ -7,8 +7,8 @@ import com.jienihou.outfitxchange.data.CategoryItem
 /**
  * CategoryDataSource consists of all the data for the Recycler View
  */
-class CategoryDataSource{
-    companion object{
+class CategoryDataSource {
+    companion object {
         fun createCategories() = listOf(
                 CategoryItem(R.drawable.sweater, Category.TOPS.category),
                 CategoryItem(R.drawable.category_three, Category.PANTS.category),
