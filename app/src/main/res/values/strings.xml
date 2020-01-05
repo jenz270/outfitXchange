@@ -34,4 +34,7 @@
 
     <!-- Message Details Item -->
     <string name="messages_entry_hint">Type your message here</string>
+
+    <!-- User Profile Item -->
+    <string name="change_profile_photo">Change Profile Photo</string>
 </resources>

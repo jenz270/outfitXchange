@@ -108,4 +108,11 @@
     <dimen name="message_details_image_button_margin_top">10dp</dimen>
     <dimen name="message_details_separator_height">1dp</dimen>
 
+    <!-- User Profile Screen -->
+    <dimen name="user_profile_user_name_margin_top">30dp</dimen>
+    <dimen name="user_profile_user_name_text_size">20sp</dimen>
+    <dimen name="user_profile_change_profile_photo_text_size">15sp</dimen>
+    <dimen name="user_profile_change_profile_photo">8dp</dimen>
+    <dimen name="user_profile_options_text_size">18sp</dimen>
+
 </resources>
