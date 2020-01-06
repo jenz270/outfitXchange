@@ -37,4 +37,7 @@
 
     <!-- User Profile Item -->
     <string name="change_profile_photo">Change Profile Photo</string>
+
+    <!-- Favourites Item -->
+    <string name="my_favourites">My Favourites</string>
 </resources>
